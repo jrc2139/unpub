@@ -110,7 +110,7 @@ class App {
       var res = await router.call(req);
       return res;
     });
-    var server = await shelf_io.serve(handler, host, port);
+    var server = await shelf_io.serve(handler, host!, port);
     return server;
   }
 
